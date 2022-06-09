@@ -1,0 +1,36 @@
+float posX;
+float posY;
+float desplazamiento;
+float equis;
+
+void setup (){
+size(500, 500);
+posX = width/2;
+posY = height/2;
+desplazamiento = -4;
+equis= -2;
+}
+
+void draw(){
+background (0);
+fill(255, 78, 79);  //puedo probar con random
+ellipse(posX, posY, 100, 100);
+if(posY < 0){
+desplazamiento= 3;
+}
+else if (posY> height){
+desplazamiento= -3;
+}
+posY = posY + desplazamiento ;
+posX= posX + equis;
+if (posX < 0){
+equis= 3;
+}
+else if (posX > width){
+equis= -3;
+}
+}
+void mouseClicked(){
+desplazamiento= -3*desplazamiento;
+equis= -3*equis;
+}
