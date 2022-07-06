@@ -1,0 +1,12 @@
+int o1;
+int o2;
+int o3;
+int o4;
+int max = 7;
+PFont font;
+float w,h;
+float x, y;
+PImage imagenuno, imagendos, boton1,ruta ;
+PImage [] images = new PImage [max];
+String [] filenames;
+String estado = "estado1";
